@@ -1,8 +1,8 @@
 
-# C++ Telegram Bot
+# C++ echo Telegram Bot
 
 A Telegram bot written in C++.
-
+every text you type ⇒ back that for you
 ## Requirements
 
 - C++ compiler

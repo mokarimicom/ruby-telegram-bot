@@ -1,0 +1,22 @@
+# Compiled programs
+main
+bot
+*.o
+*.a
+*.so
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Build directories
+build/
+cmake-build-*/
+
+# Editor files
+.vscode/
+.idea/
+
+# Logs
+*.log

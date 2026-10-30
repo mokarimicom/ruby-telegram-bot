@@ -1,20 +1,55 @@
+Ruby Telegram Bot 🤖
 
-# C++ echo Telegram Bot
+Features
 
-A Telegram bot written in C++.
-every text you type ⇒ back that for you
-## Requirements
+- Responds to Telegram messages
+- Uses the Telegram Bot API
+- Simple Ruby project structure
+- Keeps the bot token in an environment variable
 
-- C++ compiler
-- libcurl
-- nlohmann-json
+Requirements
 
-On Arch Linux:
+- Ruby
+- Bundler (optional, for managing dependencies)
+- A Telegram bot token from "@BotFather" (https://t.me/BotFather)
 
-```bash
-sudo pacman -S --needed base-devel curl nlohmann-json
+Installation
 
-export BOT_TOKEN="YOUR_BOT_TOKEN_HERE"
-g++ -std=c++17 bot.cpp -o bot $(pkg-config --cflags --libs libcurl)
+Clone the repository:
 
-./bot
+git clone <URL>
+cd ruby-telegram-bot
+
+Install dependencies if your project has a "Gemfile":
+
+bundle install
+
+Configuration
+
+Set your Telegram bot token as an environment variable:
+
+export TELEGRAM_BOT_TOKEN="YOUR_BOT_TOKEN"
+
+Replace "YOUR_BOT_TOKEN" with your actual token.
+
+gem install telegram-bot-ruby
+
+Run the Bot
+
+Run the command that matches your main Ruby file. For example:
+
+ruby main.rb
+
+Or, if your entry point is named "bot.rb":
+
+ruby bot.rb
+
+Security
+
+- Never publish your Telegram bot token.
+- Do not commit ".env" files or other files containing secrets.
+- If your token is exposed, revoke it through "@BotFather" (https://t.me/BotFather).
+
+License
+
+Choose a license for your project before distributing it. For example, MIT.

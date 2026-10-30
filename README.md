@@ -22,6 +22,8 @@ cd ruby-telegram-bot
 
 Install dependencies if your project has a "Gemfile":
 
+gem install telegram-bot-ruby
+
 bundle install
 
 Configuration
@@ -32,7 +34,7 @@ export TELEGRAM_BOT_TOKEN="YOUR_BOT_TOKEN"
 
 Replace "YOUR_BOT_TOKEN" with your actual token.
 
-gem install telegram-bot-ruby
+
 
 Run the Bot
 
